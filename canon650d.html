@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!-- Instruktion til webbrowser om at vi kører HTML5 -->
+        <!DOCTYPE html>
+
+        <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+        <html lang="da">
+
+        <!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+        <head>
+        <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+        <meta charset="utf-8">
+
+        <!-- Titel som ses oppe i browserens tab mv. -->
+        <title>22e 1b Thorbjørn Wagner-August</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Thorbjørn Wagner-August">
+    <meta name="copyright" content="Thunderbear">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="mmdgrid.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/ef424bfb92.js" crossorigin="anonymous"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<!-- Her skal sidens indhold ligge -->
+
+<!-- Header Sektion -->
+<div class="container-fluid h-auto">
+
+    <div class="row p-3 h-100 align-items-center bg-header">
+        <div class="col-3">
+            <a href="index.html"><img src="images/200-12.png" alt="pic" id="logo"></a>
+        </div>
+
+
+
+        <div class="col"></div>
+
+        <div class="form col-md-3">
+            <form method="get" action="index.html">
+                <div class="label">
+                    <label for="navn">Login</label>
+                    <br>
+                    <input id="navn" name="navn" type="text" placeholder="Bruger" value="">
+                    <br>
+                    <br>
+                    <label for="kode">Kode</label>
+                    <br>
+                    <input id="kode" name="kode" type="password" placeholder="Kode" value="">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Navbar Sektion -->
+
+<div class="container-fluid h-auto navbar-container">
+    <div class="navbar row p-3 bg-secondary">
+        <div class="col-4"></div>
+
+        <div class="col-8 d-lg-none">
+            <div class="toggle d-flex justify-content-end">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="nav col-12-lg-8">
+            <div class="row justify-content-center">
+                <div class="col-lg-auto p-3"><a href="dslr.html">DSLR</a></div>
+                <div class="col-lg-auto p-3"><a href="/">Videokamera</a></div>
+                <div class="col-lg-auto p-3"><a href="/">Lyd & Lys</a></div>
+                <div class="col-lg-auto p-3"><a href="nybruger.html">Ny Bruger</a></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Indhold -->
+
+<div class="container">
+
+    <div class="row gy-3">
+        <div class="col-md-3">
+
+            <div class="portrait"><img src="images/can2.png" alt="pic" id="main-img"></div>
+        </div>
+        <div class="col-md-3 gy-3">
+
+            <h2 class="mb-1 mt-4">Depositum</h2>
+            <p>1.000 kr.</p>
+            <p class="mt-3">Der medfølger: </p>
+            <ul>
+                <li>Beskyttelsesudstyr</li>
+                <li>Taske</li>
+                <li>To batterier</li>
+                <li>Oplader</li>
+            </ul>
+            <button class="button">Book Nu</button>
+
+        </div>
+        <div class="col-md-6">
+
+                <h1 class="mb-2">Canon EOS 650D</h1>
+                <h4 class="mb-1">Nem at håndtere</h4>
+                <p>Jeg låner mit Cannon EOS 650D kamera ud. Det er et fantastisk begynder kamera, som i erfarne hænder kan opnå professionelle resultater.</p>
+                <p class="mt-3">Jeg er bosat i Køge og kameraet skal kunne hentes her, samt leveres tilbage. Du må gerne tage kameraet med på tur, men skal benytte den rette beskyttelse, i forhold til vejr og andre omstændigheder.</p>
+
+            <div class="row gy-3 mt-3">
+
+
+
+                <div class="">
+                    <h2>Specifikationer</h2>
+                    <ul>
+                        <li>18,0 Megapixel APS-C CMOS-sensor</li>
+                        <li>Full HD-film med manuel kontrol og kontinuerlig autofokus</li>
+                        <li>5 bps kontinuerlig optagelse</li>
+                        <li>Clear View LCD II-touchscreen, som kan vippes og drejes</li>
+                        <li>ISO-følsomhed på 100-12800, kan udvides til ISO 25600</li>
+                        <li>9-punkts AF med bredt område</li>
+                        <li>Indbygget Speedlite Transmitter</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+
+        <div class="row col-md-6 gy-3">
+            <h2>Bookingkalender 22/23</h2>
+            <div class="text-light">
+                <table class="bg-dark" border="1">
+                    <thead>
+                    <tr>
+                        <th>Mandag</th>
+                        <th>Tirsdag</th>
+                        <th>Onsdag</th>
+                        <th>Torsdag</th>
+                        <th>Fredag</th>
+                        <th>Lørdag</th>
+                        <th>Søndag</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="ledig">26/12</td>
+                        <td class="ledig">27/12</td>
+                        <td class="ledig">28/12</td>
+                        <td class="ledig">29/12</td>
+                        <td class="ledig">30/12</td>
+                        <td class="optaget">31/12</td>
+                        <td class="optaget">1/1</td>
+                    </tr>
+                    <tr>
+                        <td class="optaget">2/1</td>
+                        <td class="optaget">3/1</td>
+                        <td class="optaget">4/1</td>
+                        <td class="ledig">5/1</td>
+                        <td class="ledig">6/1</td>
+                        <td class="ledig">7/1</td>
+                        <td class="ledig">8/1</td>
+                    </tr>
+                    <tr>
+                        <td class="optaget">9/1</td>
+                        <td class="ledig">10/1</td>
+                        <td class="optaget">11/1</td>
+                        <td class="ledig">12/1</td>
+                        <td class="ledig">13/1</td>
+                        <td class="ledig">14/1</td>
+                        <td class="optaget">15/1</td>
+                    </tr>
+                    <tr>
+                        <td class="optaget">16/1</td>
+                        <td class="ledig">17/1</td>
+                        <td class="ledig">18/1</td>
+                        <td class="ledig">19/1</td>
+                        <td class="ledig">20/1</td>
+                        <td class="optaget">21/1</td>
+                        <td class="optaget">22/1</td>
+                    </tr>
+                    <tr>
+                        <td class="ledig">23/1</td>
+                        <td class="ledig">24/1</td>
+                        <td class="ledig">25/1</td>
+                        <td class="ledig">26/1</td>
+                        <td class="ledig">27/1</td>
+                        <td class="optaget">28/1</td>
+                        <td class="optaget">29/1</td>
+                    </tr>
+                    <tr>
+                        <td class="ledig">30/1</td>
+                        <td class="ledig">31/1</td>
+                        <td class="ledig">1/2</td>
+                        <td class="ledig">2/2</td>
+                        <td class="ledig">3/2</td>
+                        <td class="optaget">4/2</td>
+                        <td class="optaget">5/2</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row col gy-3">
+            <h2>Vurdering</h2>
+
+            <div class="col-auto"><img src="images/stars-01.png"></div>
+            <div class="col-auto"><img src="images/stars-01.png"></div>
+            <div class="col-auto"><img src="images/stars-01.png"></div>
+            <div class="col-auto"><img src="images/stars-02.png"></div>
+
+        </div>
+
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+
+        </div>
+
+        <div class="col">
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer Sektion -->
+
+<div class="container-fluid mt-5">
+
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items col-3">
+                    <h2>Om Os</h2>
+                    <a href="/">Hvem Er Vi</a>
+                    <a href="/">Samarbejde</a>
+
+                </div>
+                <div class="footer-link-items col-3">
+                    <h2>Kontakt</h2>
+                    <a href="/">Find Os Her</a>
+                    <a href="/">Mail Os</a>
+                    <a href="/">Ledige Stillinger</a>
+                </div>
+                <div class="footer-link-items col-3">
+                    <h2>Vilkår</h2>
+                    <a href="/">Abonnement</a>
+                    <a href="/">Udtalelser</a>
+                    <a href="/">Brugsvilkår</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="social-media-wrap">
+                <p class="website-rights col"><i class="fas fa-copyright"></i>  Thunderbear 2022 - 22e 1b </p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+</script>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

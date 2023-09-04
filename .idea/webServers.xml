@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="38a411aa-89ea-4e28-bc0e-f06d4fb58e7a" name="thunder-bear" url="http://linux308.unoeuro.com">
+        <fileTransfer rootFolder="/public_html" host="linux308.unoeuro.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="81538158-0bb6-4698-b245-f3b9121c4942" name="WAMP" url="http://localhost">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

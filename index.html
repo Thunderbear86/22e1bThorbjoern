@@ -1,0 +1,228 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>22e 1b Thorbjørn Wagner-August</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Thorbjørn Wagner-August">
+    <meta name="copyright" content="Thunderbear">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="mmdgrid.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/ef424bfb92.js" crossorigin="anonymous"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<!-- Her skal sidens indhold ligge -->
+
+<!-- Header Sektion -->
+<div class="container-fluid h-auto">
+
+    <div class="row p-3 h-100 align-items-center bg-header">
+        <div class="col-3">
+            <a href="index.html"><img src="images/200-12.png" alt="pic" id="logo"></a>
+        </div>
+
+
+
+        <div class="col"></div>
+
+        <div class="form col-md-3">
+            <form method="get" action="index.html">
+                <div class="label">
+                    <label for="navn">Login</label>
+                    <br>
+                    <input id="navn" name="navn" type="text" placeholder="Bruger" value="">
+                    <br>
+                    <br>
+                    <label for="kode">Kode</label>
+                    <br>
+                    <input id="kode" name="kode" type="password" placeholder="Kode" value="">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Navbar Sektion -->
+
+<div class="container-fluid h-auto navbar-container">
+    <div class="navbar row p-3 bg-secondary">
+        <div class="col-4"></div>
+
+            <div class="col-8 d-lg-none">
+                <div class="toggle d-flex justify-content-end">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+            </div>
+
+        <div class="nav col-12-lg-8">
+            <div class="row justify-content-center">
+                <div class="col-lg-auto p-3"><a href="dslr.html">DSLR</a></div>
+                <div class="col-lg-auto p-3"><a href="/">Videokamera</a></div>
+                <div class="col-lg-auto p-3"><a href="/">Lyd & Lys</a></div>
+                <div class="col-lg-auto p-3"><a href="nybruger.html">Ny Bruger</a></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Indhold -->
+
+<div class="container">
+
+    <div class="row gy-3">
+        <div class="col-md-3">
+
+        <div class="portrait"><img src="images/DigiSwap%20Billede%201.jpg" alt="pic" id="main-img"></div>
+        </div>
+
+        <div class="col-md-6">
+
+            <a class="tekst" href="https://google.dk">
+
+            <h2 class="mb-2">Blog</h2>
+                <h4 class="mb-1">Underoverskrift</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </a>
+            <div class="row gy-3 mt-3">
+                <div class="col-auto"><img src="images/stars-01.png" alt="pic"></div>
+                <div class="col-auto"><img src="images/stars-01.png" alt="pic"></div>
+                <div class="col-auto"><img src="images/stars-01.png" alt="pic"></div>
+                <div class="col-auto"><img src="images/stars-01.png" alt="pic"></div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+<br>
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-md-3 justify-content-center">
+                <h1 class="mb-2"></h1>
+                    <h4 class="mb-1"></h4>
+
+
+            </div>
+
+            <div class="col-md-6 h-100"><img src="images/video%20thumbnail-01.png" alt="pic" id="thumb"></div>
+
+        </div>
+    </div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-3 gy-5">
+        <div class="col">
+
+            <h3 class="mb-1">Nyheder</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <div class="image-large1 mt-3"></div>
+        </div>
+        <div class="col">
+            <h3 class="mb-1">Abonnement</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <div class="image-large1 mt-3"></div>
+        </div>
+
+        <div class="col">
+            <h3 class="mb-1">Inspiration</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <div class="image-large1 mt-3"></div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Sektion -->
+
+<div class="container-fluid mt-5">
+
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items col-3">
+                    <h2>Om Os</h2>
+                    <a href="/">Hvem Er Vi</a>
+                    <a href="/">Samarbejde</a>
+
+                </div>
+                <div class="footer-link-items col-3">
+                    <h2>Kontakt</h2>
+                    <a href="/">Find Os Her</a>
+                    <a href="/">Mail Os</a>
+                    <a href="/">Ledige Stillinger</a>
+                </div>
+                <div class="footer-link-items col-3">
+                    <h2>Vilkår</h2>
+                    <a href="/">Abonnement</a>
+                    <a href="/">Udtalelser</a>
+                    <a href="/">Brugsvilkår</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="social-media-wrap">
+                <p class="website-rights col"><i class="fas fa-copyright"></i>  Thunderbear 2022 - 22e 1b </p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com" class="social-icon-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+</script>
+
+</body>
+</html>
